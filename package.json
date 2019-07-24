@@ -1,0 +1,25 @@
+{
+  "name": "micro-blog",
+  "version": "1.0.0",
+  "description": "Micro-blog implemented using node, express, vue and mongo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "bluebird": "*",
+    "mongoose": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "bcryptjs": "*",
+    "morgan": "*",
+    "cookie-parser": "*",
+    "method-override": "*",
+    "express-session": "*"
+  },
+  "author": "Juho Hupanen",
+  "license": "ISC"
+}

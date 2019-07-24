@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  express:
+    container_name: micro-blog
+    restart: always
+    build: .
+    ports:
+      - '3000:3000'
+    links:
+     - mongo
+    depends_on:
+     - mongo
+  
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '27017:27017'
