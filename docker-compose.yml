@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
   express:
@@ -7,13 +7,13 @@ services:
     build: .
     ports:
       - '3000:3000'
-    links:
-     - mongo
-    depends_on:
-     - mongo
+  #   links:
+  #    - mongo
+  #   depends_on:
+  #    - mongo
   
-  mongo:
-    container_name: mongo
-    image: mongo
-    ports:
-      - '27017:27017'
+  # mongo:
+  #   container_name: mongo
+  #   image: mongo
+  #   ports:
+  #     - '27017:27017'

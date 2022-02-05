@@ -7,18 +7,21 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "*",
+    "express": "*", 
+    "mongoose": "*", 
+    "body-parser": "*", 
+    "passport": "*", 
+    "passport-local": "*", 
+    "bcryptjs": "*", 
+    "cookie-parser": "*", 
+    "express-session": "*",
+    "dotenv": "*" 
+  },
+  "devDependencies": {
     "bluebird": "*",
-    "mongoose": "*",
-    "body-parser": "*",
-    "cors": "*",
-    "passport": "*",
-    "passport-local": "*",
-    "bcryptjs": "*",
-    "morgan": "*",
-    "cookie-parser": "*",
     "method-override": "*",
-    "express-session": "*"
+    "morgan": "*",
+    "cors": "*"
   },
   "author": "Juho Hupanen",
   "license": "ISC"
