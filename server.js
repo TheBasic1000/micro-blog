@@ -28,7 +28,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-var port = 3000;
+var port = process.env.PORT;
 
 // Cors config
 /* app.use(cors({
